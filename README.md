@@ -154,3 +154,6 @@ _OSPAR reference dataset_
 More layers are added as the possibility arises. However, WFS is not the most efficient form of delivery for complex datasets, such as the habitat maps from survey datasets and EUSeaMap, due to the size of the downloads involved. These datasets are available to download as static download packages from the [EMODnet Seabed Habitats download page](http://www.emodnet-seabedhabitats.eu/download).
 
 Delivery of layers as WFS is constantly reviewed and layers will be made available if this option becomes possible
+
+**Notes on usage:**
+* Note that due to the layer's complexity, the OSPAR Polygons layer (OSPARhabPolygons) may take some time to load into your GIS.
