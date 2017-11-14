@@ -66,23 +66,25 @@ __OSPAR reference dataset__
 OSPARHabPoints, OSPARhabPolygons, OSPARhabPolygonLoc
 
 **Values:**
-Code	OSPAR Habitat
-carbmoun	Carbonate mounds
-coragard	Coral gardens
-cymomead	Cymodocea meadows
-deepspag	Deep-sea sponge aggregations
-ocearidg	Oceanic ridges with hydrothermal vents/fields
-lophpert	Lophelia pertusa reefs
-ostredul	Ostrea edulis beds
-seamount	Seamounts
-seapenbm	Sea-pen and burrowing megafauna communities
-zosterab	Zostera beds
-intermud	Intertidal mudflats
-litchalk	Littoral chalk communities
-maerlbed	Maerl beds
-modimodi	Modiolus modiolus horse mussel beds
-sabspinu	Sabellaria spinulosa reefs
-intermyt	Intertidal Mytilus edulis beds on mixed and sandy sediments
+
+| Code | OSPAR Habitat |
+| ---- | ------------- |
+| carbmoun | Carbonate mounds |
+| coragard | Coral gardens |
+| cymomead | Cymodocea meadows |
+| deepspag | Deep-sea sponge aggregations |
+| ocearidg | Oceanic ridges with hydrothermal vents/fields |
+| lophpert | Lophelia pertusa reefs |
+| ostredul | Ostrea edulis beds |
+| seamount | Seamounts |
+| seapenbm | Sea-pen and burrowing megafauna communities |
+| zosterab | Zostera beds |
+| intermud | Intertidal mudflats |
+| litchalk | Littoral chalk communities |
+| maerlbed | Maerl beds |
+| modimodi | Modiolus modiolus horse mussel beds |
+| sabspinu | Sabellaria spinulosa reefs |
+| intermyt | Intertidal Mytilus edulis beds on mixed and sandy sediments |
 
 **Notes on usage:**
 *	The code is passed through as a regex expression, as such, you may shorten the codes further.
