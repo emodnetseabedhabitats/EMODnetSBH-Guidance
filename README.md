@@ -60,7 +60,9 @@ EUNISbroad_100, EUNISbroad_Full, EUNISbroad_SA, EUNISbroad_SAx
 Filter layer to show only records describing the OSPAR Habitat, written as a shortened code.
 
 **Affects the following WMS layers:** 
+
 __OSPAR reference dataset__
+
 OSPARHabPoints, OSPARhabPolygons, OSPARhabPolygonLoc
 
 **Values:**
@@ -97,17 +99,26 @@ intermyt	Intertidal Mytilus edulis beds on mixed and sandy sediments
 Filter habitat maps from survey to only show specified datasets.
 
 **Affects the following WMS layers:** 
+
 __EUNIS habitat maps from survey__
+
 EUNISmedium_100, EUNISmedium_FULL, EUNISmedium_SA, EUNISmedium_SAx
+
 EUNISfine50, EUNISfineFULL, EUNISfineSA, EUNISfineSAx
+
 EUNISbroad_100, EUNISbroad_Full, EUNISbroad_SA, EUNISbroad_Sax
 
+
 __Other habitat maps from survey__
+
 Othermedium_100, Othermedium_FULL, Othermedium_SA, Othermedium_SAx
+
 Otherfine50, OtherfineFULL, OtherfineSA, OtherfineSAx
 
 __Habitats directive habitat maps from survey__
+
 EUNISmedium_100, EUNISmedium_FULL, EUNISmedium_SA, EUNISmedium_SAx
+
 
 **Values:** “GUI” dataset identifiers, these can be identified by querying a habitat map in the [interactive map](http://www.emodnet-seabedhabitats.eu/map), or through the [metadata search page](http://www.emodnet-seabedhabitats.eu/search).
 
@@ -122,3 +133,20 @@ EUNISmedium_100, EUNISmedium_FULL, EUNISmedium_SA, EUNISmedium_SAx
     *	This will show only maps submitted by Italian organisations
 *	&GUICode=ES|GR
     *	This will show only maps submitted by either Spanish or Greek organisations
+
+# EMODnet Seabed Habitats Web Feature Services (WFS)
+For machine-to-machine access to true spatial data, EMODnet Seabed Habitats provides an [OGC Web Feature Service](http://www.opengeospatial.org/standards/wfs) for compatible layers.
+
+The service can be accessed via:
+http://213.122.160.75/scripts/mapserv.exe?map=D:/Websites/MESHAtlantic/map/EMODnetWFS.map&version=1.1.0
+
+
+**Currently the layers available through this service are as follows:**
+
+__OSPAR reference dataset__
+
+OSPARHabPoints, OSPARhabPolygons
+
+More layers are added as the possibility arises. However, WFS is not the most efficient form of delivery for complex datasets, such as the habitat maps from survey datasets and EUSeaMap, due to the size of the downloads involved. These datasets are available to download as static download packages from the [EMODnet Seabed Habitats download page](http://www.emodnet-seabedhabitats.eu/download).
+
+Delivery of layers as WFS is constantly reviewed and layers will be made available if this option becomes possible
