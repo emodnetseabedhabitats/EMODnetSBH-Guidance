@@ -56,7 +56,7 @@ EUNISbroad_100, EUNISbroad_Full, EUNISbroad_SA, EUNISbroad_SAx
 *	&HabCode=A3.1|A3.2
     *	This will show only polygons containing EITHER A3.1 OR A3.2
 
-### “OSPCode”
+### &OSPCode=*[value]*
 Filter layer to show only records describing the OSPAR Habitat, written as a shortened code.
 
 **Affects the following WMS layers:** 
@@ -93,7 +93,7 @@ intermyt	Intertidal Mytilus edulis beds on mixed and sandy sediments
 *	&OSPCode =deepspag|coragard
     *	This will filter the layer to show records of Deep-sea sponge aggregations and Coral gardens
 
-### “GUICode”
+### &GUICode=*[value]*
 Filter habitat maps from survey to only show specified datasets.
 
 **Affects the following WMS layers:** 
