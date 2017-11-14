@@ -33,11 +33,11 @@ Filter layer to show only records containing the described EUNIS Habitat code(s)
 
 **Affects the following WMS layers:**
 
-__EUSeaMap2016__
+_EUSeaMap2016_
 
 EUSM2016_simplified800, EUSM2016_simplified400, EUSM2016_simplified200, EUSM2016_detailed
 
-__EUNIS habitat maps from survey__
+_EUNIS habitat maps from survey_
 
 EUNISmedium_100, EUNISmedium_FULL, EUNISmedium_SA, EUNISmedium_SAx
 EUNISfine50, EUNISfineFULL, EUNISfineSA, EUNISfineSAx
@@ -61,7 +61,7 @@ Filter layer to show only records describing the OSPAR Habitat, written as a sho
 
 **Affects the following WMS layers:** 
 
-__OSPAR reference dataset__
+_OSPAR reference dataset_
 
 OSPARHabPoints, OSPARhabPolygons, OSPARhabPolygonLoc
 
@@ -102,7 +102,7 @@ Filter habitat maps from survey to only show specified datasets.
 
 **Affects the following WMS layers:** 
 
-__EUNIS habitat maps from survey__
+_EUNIS habitat maps from survey_
 
 EUNISmedium_100, EUNISmedium_FULL, EUNISmedium_SA, EUNISmedium_SAx
 
@@ -111,15 +111,15 @@ EUNISfine50, EUNISfineFULL, EUNISfineSA, EUNISfineSAx
 EUNISbroad_100, EUNISbroad_Full, EUNISbroad_SA, EUNISbroad_Sax
 
 
-__Other habitat maps from survey__
+_Other habitat maps from survey_
 
 Othermedium_100, Othermedium_FULL, Othermedium_SA, Othermedium_SAx
 
 Otherfine50, OtherfineFULL, OtherfineSA, OtherfineSAx
 
-__Habitats directive habitat maps from survey__
+_Habitats directive habitat maps from survey_
 
-EUNISmedium_100, EUNISmedium_FULL, EUNISmedium_SA, EUNISmedium_SAx
+N2000_100, N2000_Full, N2000_SA, N2000_SAx
 
 
 **Values:** “GUI” dataset identifiers, these can be identified by querying a habitat map in the [interactive map](http://www.emodnet-seabedhabitats.eu/map), or through the [metadata search page](http://www.emodnet-seabedhabitats.eu/search).
@@ -145,7 +145,7 @@ http://213.122.160.75/scripts/mapserv.exe?map=D:/Websites/MESHAtlantic/map/EMODn
 
 **Currently the layers available through this service are as follows:**
 
-__OSPAR reference dataset__
+_OSPAR reference dataset_
 
 OSPARHabPoints, OSPARhabPolygons
 
