@@ -141,19 +141,17 @@ _Habitats directive habitat maps from survey_
 # EMODnet Seabed Habitats Web Feature Services (WFS)
 For machine-to-machine access to true spatial data, EMODnet Seabed Habitats provides an [OGC Web Feature Service](http://www.opengeospatial.org/standards/wfs) for compatible layers.
 
-The service can be accessed via:
+This can be accessed via the same OGC web service as the WMS, a heiracrhicalstructure at:
+http://213.122.160.75/scripts/mapserv.exe?map=D:/Websites/MESHAtlantic/map/MESHAtlanticWMS.map
+
+and a simplified structure (for simple clients and quick web interfaces) at:
+http://213.122.160.75/scripts/mapserv.exe?map=D:/Websites/MESHAtlantic/map/MESHAtlantic.map
+
+A separate service has been created to specifically serve the OSPAR datasets, this service can be accessed via:
 http://213.122.160.75/scripts/mapserv.exe?map=D:/Websites/MESHAtlantic/map/EMODnetWFS.map&version=1.1.0
 
 
-**Currently the layers available through this service are as follows:**
-
-_OSPAR reference dataset_
-
-> OSPARHabPoints, OSPARhabPolygons
-
-More layers are added as the possibility arises. However, WFS is not the most efficient form of delivery for complex datasets, such as the habitat maps from survey datasets and EUSeaMap, due to the size of the downloads involved. These datasets are available to download as static download packages from the [EMODnet Seabed Habitats download page](http://www.emodnet-seabedhabitats.eu/download).
-
-Delivery of layers as WFS is constantly reviewed and layers will be made available if this option becomes possible
+Whilst all vector layers available as WMS are provided as WFS by default, it should be noted that WFS is not the most efficient form of delivery for complex datasets, (e.g. EUNIS habitat maps from survey), due to the size of the downloads involved. These datasets are also available to download as static download packages from the [EMODnet Seabed Habitats download page](http://www.emodnet-seabedhabitats.eu/download).
 
 **Notes on usage:**
-* Note that due to the layer's complexity, the OSPAR Polygons layer (OSPARhabPolygons) may take some time to load into your GIS.
+* Note that depending on a layer's complexity, it may take some time to load into your GIS or may time out. In the event of consistent time-outs, please download the corresponding static package.
