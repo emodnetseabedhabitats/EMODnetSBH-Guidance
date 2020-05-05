@@ -4,17 +4,21 @@ Guidance for using the EMODnet Seabed Habitats web services
 # EMODnet Seabed Habitats Web Mapping Services (WMS)
 EMODnet Seabed Habitats provides an [OGC Web Mapping Service](http://www.opengeospatial.org/standards/wms) for viewing habitat information on  desktop GIS, web portal or other clients.
 
-The feed is provided in two forms, a full verbose and hierarchical structure available at:
-http://213.122.160.75/scripts/mapserv.exe?map=D:/Websites/MESHAtlantic/map/MESHAtlanticWMS.map
+Due to the large volume of individual habitat survey maps and models, we have separate the OGC services into separate workspaces. 
 
-and a simplified structure (for simple clients and quick web interfaces) at:
-http://213.122.160.75/scripts/mapserv.exe?map=D:/Websites/MESHAtlantic/map/MESHAtlantic.map
+The WMS for the main EMODnet Seabed Habitats' data products is: 
+https://ows.emodnet-seabedhabitats.eu/emodnet_view/wms? 
 
-Both services provide the same data.
+This includes our main products including, but not limited to, EUSeaMap 2019, the OSPAR Threatened and Declining Habitats database and environmental variables influencing habitat types. 
+
+The WMS for all individual habitat maps and models is:
+https://ows.emodnet-seabedhabitats.eu/emodnet_view_maplibrary/wms?
+
+## Loading WMS data in GIS clients 
 
 The services can be accessed in your client by inputing the above addresses, though the method differs depending on the application.
 
-For information on how to connect to a WMS in QGIS, visit [Adding WMS Layers](http://maps.cga.harvard.edu/qgis/wkshop/wms.php "External Link: Adding WMS Layers on the Harvard University QGIS 2.0 workshop (opens in new window)") on the Harvard University QGIS 2.0 workshop.
+For information on how to connect to a WMS in QGIS, visit [Working with WMS Data](https://www.qgistutorials.com/en/docs/working_with_wms.html "External Link: Adding WMS Layers via QGIS Tutorials (opens in new window)") on the QGIS Tutorial website.
 
 For information on how to connect to a WMS in ArcMap, visit [Adding WMS services](http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#//00sp0000000s000000.htm "External Link: Adding WMS services on the ArcGIS Resource Center (opens in new window)") on the ArcGIS Resource Center.
 
@@ -29,7 +33,6 @@ Adding custom vendor paramters to WMS requests depends on the client/software be
 
 ### &HabCode=*[value]*
 Filter layer to show only records containing the described EUNIS Habitat code(s), even as a habitat mosaic.
-
 
 **Affects the following WMS layers:**
 
