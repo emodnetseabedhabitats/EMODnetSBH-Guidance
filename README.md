@@ -9,7 +9,7 @@ Due to the large volume of individual habitat survey maps and models, we have se
 The WMS for the main EMODnet Seabed Habitats' data products is: 
 https://ows.emodnet-seabedhabitats.eu/emodnet_view/wms? 
 
-This includes our main products including, but not limited to, EUSeaMap 2019, the OSPAR Threatened and Declining Habitats database and environmental variables influencing habitat types. 
+This includes our main products including, but not limited to, EUSeaMap 2019, the OSPAR Threatened and Declining Habitats database, survey groundtruthing point data and our Essential Ocean Vairable composite products. 
 
 The WMS for all individual habitat maps and models is:
 https://ows.emodnet-seabedhabitats.eu/emodnet_view_maplibrary/wms?
@@ -142,19 +142,21 @@ _Habitats directive habitat maps from survey_
     *	This will show only maps submitted by either Spanish or Greek organisations
 
 # EMODnet Seabed Habitats Web Feature Services (WFS)
-For machine-to-machine access to true spatial data, EMODnet Seabed Habitats provides an [OGC Web Feature Service](http://www.opengeospatial.org/standards/wfs) for compatible layers.
+For machine-to-machine access to true spatial vector data, EMODnet Seabed Habitats provides an [OGC Web Feature Service](http://www.opengeospatial.org/standards/wfs) for compatible layers.
 
-This can be accessed via the same OGC web service as the WMS, a heiracrhicalstructure at:
-http://213.122.160.75/scripts/mapserv.exe?map=D:/Websites/MESHAtlantic/map/MESHAtlanticWMS.map
+As with the WMS workspaces, separate workspaces are provided for the WFS data.
 
-and a simplified structure (for simple clients and quick web interfaces) at:
-http://213.122.160.75/scripts/mapserv.exe?map=D:/Websites/MESHAtlantic/map/MESHAtlantic.map
+The WFS for the main EMODnet Seabed Habitats' data products is: 
+https://ows.emodnet-seabedhabitats.eu/emodnet_view/wfs? 
 
-A separate service has been created to specifically serve the OSPAR datasets, this service can be accessed via:
-http://213.122.160.75/scripts/mapserv.exe?map=D:/Websites/MESHAtlantic/map/EMODnetWFS.map&version=1.1.0
+This includes our main products including, but not limited to, EUSeaMap 2019, the OSPAR Threatened and Declining Habitats database, survey groundtruthing point data and our Essential Ocean Vairable composite products. 
 
+The WFS for all individual habitat maps is:
+https://ows.emodnet-seabedhabitats.eu/emodnet_view_maplibrary/wfs?
 
-Whilst all vector layers available as WMS are provided as WFS by default, it should be noted that WFS is not the most efficient form of delivery for complex datasets, (e.g. EUNIS habitat maps from survey), due to the size of the downloads involved. These datasets are also available to download as static download packages from the [EMODnet Seabed Habitats download page](http://www.emodnet-seabedhabitats.eu/download).
+Please note, that this workspace is habitat maps in vector format only. 
+
+It should be noted that WFS is not the most efficient form of delivery for complex datasets, (e.g. EUSeaMap 2019), due to the size of the downloads involved. These datasets are also available to download as static download packages from the [EMODnet Seabed Habitats download page](https://www.emodnet-seabedhabitats.eu/access-data/download-data/).
 
 **Notes on usage:**
 * Note that depending on a layer's complexity, it may take some time to load into your GIS or may time out. In the event of consistent time-outs, please download the corresponding static package.
