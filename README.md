@@ -7,12 +7,12 @@ EMODnet Seabed Habitats provides an [OGC Web Mapping Service](http://www.opengeo
 Due to the large volume of individual habitat survey maps and models, we have separate the OGC services into separate workspaces. 
 
 The WMS for the main EMODnet Seabed Habitats' data products is: 
-https://ows.emodnet-seabedhabitats.eu/emodnet_view/wms? 
+https://ows.emodnet-seabedhabitats.eu/geoserver/emodnet_view/wms? 
 
 This includes our main products including, but not limited to, EUSeaMap 2019, the OSPAR Threatened and Declining Habitats database, survey groundtruthing point data and our Essential Ocean Vairable composite products. 
 
 The WMS for all individual habitat maps and models is:
-https://ows.emodnet-seabedhabitats.eu/emodnet_view_maplibrary/wms?
+https://ows.emodnet-seabedhabitats.eu/geoserver/emodnet_view_maplibrary/wms?
 
 ## Loading WMS data in GIS clients 
 
@@ -147,12 +147,12 @@ For machine-to-machine access to true spatial vector data, EMODnet Seabed Habita
 As with the WMS workspaces, separate workspaces are provided for the WFS data.
 
 The WFS for the main EMODnet Seabed Habitats' data products is: 
-https://ows.emodnet-seabedhabitats.eu/emodnet_view/wfs? 
+https://ows.emodnet-seabedhabitats.eu/geoserver/emodnet_view/wfs? 
 
 This includes our main products including, but not limited to, EUSeaMap 2019, the OSPAR Threatened and Declining Habitats database, survey groundtruthing point data and our Essential Ocean Vairable composite products. 
 
 The WFS for all individual habitat maps is:
-https://ows.emodnet-seabedhabitats.eu/emodnet_view_maplibrary/wfs?
+https://ows.emodnet-seabedhabitats.eu/geoserver/emodnet_view_maplibrary/wfs?
 
 Please note, that this workspace is habitat maps in vector format only. 
 
