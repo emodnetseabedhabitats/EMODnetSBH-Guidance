@@ -36,7 +36,7 @@ Filter layer to show only records containing the described EUNIS Habitat code(s)
 
 **Affects the following WMS layers:**
 
-_EUSeaMap2016_
+_EUSeaMap2021_
 
 > eusm2021_eunis2019_200, eusm2021_eunis2019_400, eusm2021_eunis2019_800 , eusm2021_eunis2019_full 
 
