@@ -118,9 +118,9 @@ _EUNIS habitat maps from survey_
 
 _Other habitat maps from survey_
 
-> Othermedium_100, Othermedium_FULL, Othermedium_SA, Othermedium_SAx
+> otherMaps_medium_200, otherMaps_medium_50, otherMaps_medium_full 
 
-> Otherfine50, OtherfineFULL, OtherfineSA, OtherfineSAx
+> otherMaps_fine_200, otherMaps_fine_50, otherMaps_fine_full 
 
 _Habitats directive habitat maps from survey_
 
