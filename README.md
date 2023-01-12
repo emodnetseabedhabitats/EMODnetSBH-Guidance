@@ -9,7 +9,7 @@ Due to the large volume of individual habitat survey maps and models, we have se
 The WMS for the main EMODnet Seabed Habitats' data products is: 
 https://ows.emodnet-seabedhabitats.eu/geoserver/emodnet_view/wms? 
 
-This includes our main products including, but not limited to, EUSeaMap 2019, the OSPAR Threatened and Declining Habitats database, survey groundtruthing point data and our Essential Ocean Vairable composite products. 
+This includes our main products including, but not limited to, EUSeaMap 2021, the OSPAR Threatened and Declining Habitats database, survey groundtruthing point data and our Essential Ocean Vairable composite products. 
 
 The WMS for all individual habitat maps and models is:
 https://ows.emodnet-seabedhabitats.eu/geoserver/emodnet_view_maplibrary/wms?
@@ -42,11 +42,11 @@ _EUSeaMap2016_
 
 _EUNIS habitat maps from survey_
 
-> EUNISmedium_100, EUNISmedium_FULL, EUNISmedium_SA, EUNISmedium_SAx
+> eunisMaps_medium_200, eunisMaps_medium_50, eunisMaps_medium_full
 
-> EUNISfine50, EUNISfineFULL, EUNISfineSA, EUNISfineSAx
+> eunisMaps_fine_200, eunisMaps_fine_50, eunisMaps_fine_full 
 
-> EUNISbroad_100, EUNISbroad_Full, EUNISbroad_SA, EUNISbroad_SAx
+> eunisMaps_broad_200, eunisMaps_broad_50, eunisMaps_broad_full 
 
 **Values:** See Id codes from the official [EEA EUNIS habitats vocabulary](http://dd.eionet.europa.eu/vocabulary/biodiversity/eunishabitats/view).
 
@@ -68,7 +68,7 @@ Filter layer to show only records describing the OSPAR Habitat, written as a sho
 
 _OSPAR reference dataset_
 
-> OSPARHabPoints, OSPARhabPolygons, OSPARhabPolygonLoc
+> ospar2020_points, ospar2020_poly
 
 **Values:**
 
@@ -109,11 +109,11 @@ Filter habitat maps from survey to only show specified datasets.
 
 _EUNIS habitat maps from survey_
 
-> EUNISmedium_100, EUNISmedium_FULL, EUNISmedium_SA, EUNISmedium_SAx
+> eunisMaps_medium_200, eunisMaps_medium_50, eunisMaps_medium_full 
 
-> EUNISfine50, EUNISfineFULL, EUNISfineSA, EUNISfineSAx
+> eunisMaps_fine_200, eunisMaps_fine_50, eunisMaps_fine_full 
 
-> EUNISbroad_100, EUNISbroad_Full, EUNISbroad_SA, EUNISbroad_Sax
+> eunisMaps_broad_200, eunisMaps_broad_50, eunisMaps_broad_full 
 
 
 _Other habitat maps from survey_
@@ -127,7 +127,7 @@ _Habitats directive habitat maps from survey_
 > N2000_100, N2000_Full, N2000_SA, N2000_SAx
 
 
-**Values:** “GUI” dataset identifiers, these can be identified by querying a habitat map in the [interactive map](https://emodnet.ec.europa.eu/geoviewer/), or through the [metadata search page](http://www.emodnet-seabedhabitats.eu/search).
+**Values:** “GUI” dataset identifiers, these can be identified by querying a habitat map in the [interactive map](https://emodnet.ec.europa.eu/geoviewer/), or through the [metadata search page](http://gis.ices.dk/geonetwork/srv/eng/catalog.search#/search).
 
 **Notes on usage:**
 *	The code is passed through as a regex expression, as such filters will allow partial matches, this can be useful to view all maps from a specific country as in the example below
@@ -149,14 +149,14 @@ As with the WMS workspaces, separate workspaces are provided for the WFS data.
 The WFS for the main EMODnet Seabed Habitats' data products is: 
 https://ows.emodnet-seabedhabitats.eu/geoserver/emodnet_view/wfs? 
 
-This includes our main products including, but not limited to, EUSeaMap 2019, the OSPAR Threatened and Declining Habitats database, survey groundtruthing point data and our Essential Ocean Vairable composite products. 
+This includes our main products including, but not limited to, EUSeaMap 2021, the OSPAR Threatened and Declining Habitats database, survey groundtruthing point data and our Essential Ocean Vairable composite products. 
 
 The WFS for all individual habitat maps is:
 https://ows.emodnet-seabedhabitats.eu/geoserver/emodnet_view_maplibrary/wfs?
 
 Please note, that this workspace is habitat maps in vector format only. 
 
-It should be noted that WFS is not the most efficient form of delivery for complex datasets, (e.g. EUSeaMap 2019), due to the size of the downloads involved. These datasets are also available to download as static download packages from the [EMODnet Seabed Habitats download page](https://emodnet.ec.europa.eu/geonetwork/emodnet/eng/catalog.search#/home).
+It should be noted that WFS is not the most efficient form of delivery for complex datasets, (e.g. EUSeaMap 2021), due to the size of the downloads involved. These datasets are also available to download as static download packages from the [EMODnet downloads page](https://emodnet.ec.europa.eu/geonetwork/emodnet/eng/catalog.search#/home).
 
 **Notes on usage:**
 * Note that depending on a layer's complexity, it may take some time to load into your GIS or may time out. In the event of consistent time-outs, please download the corresponding static package.
