@@ -38,7 +38,7 @@ Filter layer to show only records containing the described EUNIS Habitat code(s)
 
 _EUSeaMap2016_
 
-> EUSM2016_simplified800, EUSM2016_simplified400, EUSM2016_simplified200, EUSM2016_detailed
+> eusm2021_eunis2019_200, eusm2021_eunis2019_400, eusm2021_eunis2019_800 , eusm2021_eunis2019_full 
 
 _EUNIS habitat maps from survey_
 
@@ -127,7 +127,7 @@ _Habitats directive habitat maps from survey_
 > N2000_100, N2000_Full, N2000_SA, N2000_SAx
 
 
-**Values:** “GUI” dataset identifiers, these can be identified by querying a habitat map in the [interactive map](http://www.emodnet-seabedhabitats.eu/map), or through the [metadata search page](http://www.emodnet-seabedhabitats.eu/search).
+**Values:** “GUI” dataset identifiers, these can be identified by querying a habitat map in the [interactive map](https://emodnet.ec.europa.eu/geoviewer/), or through the [metadata search page](http://www.emodnet-seabedhabitats.eu/search).
 
 **Notes on usage:**
 *	The code is passed through as a regex expression, as such filters will allow partial matches, this can be useful to view all maps from a specific country as in the example below
@@ -156,7 +156,7 @@ https://ows.emodnet-seabedhabitats.eu/geoserver/emodnet_view_maplibrary/wfs?
 
 Please note, that this workspace is habitat maps in vector format only. 
 
-It should be noted that WFS is not the most efficient form of delivery for complex datasets, (e.g. EUSeaMap 2019), due to the size of the downloads involved. These datasets are also available to download as static download packages from the [EMODnet Seabed Habitats download page](https://www.emodnet-seabedhabitats.eu/access-data/download-data/).
+It should be noted that WFS is not the most efficient form of delivery for complex datasets, (e.g. EUSeaMap 2019), due to the size of the downloads involved. These datasets are also available to download as static download packages from the [EMODnet Seabed Habitats download page](https://emodnet.ec.europa.eu/geonetwork/emodnet/eng/catalog.search#/home).
 
 **Notes on usage:**
 * Note that depending on a layer's complexity, it may take some time to load into your GIS or may time out. In the event of consistent time-outs, please download the corresponding static package.
