@@ -38,15 +38,15 @@ Filter layer to show only records containing the described EUNIS Habitat code(s)
 
 _EUSeaMap2021_
 
-> eusm2021_eunis2019_200, eusm2021_eunis2019_400, eusm2021_eunis2019_800 , eusm2021_eunis2019_full 
+> eusm2021_eunis2019_200, eusm2021_eunis2019_400, eusm2021_eunis2019_800, eusm2021_eunis2019_full 
 
 _EUNIS habitat maps from survey_
 
-> eunisMaps_medium_200, eunisMaps_medium_50, eunisMaps_medium_full
+> eunisMaps_medium_200, eunisMaps_medium_50, eunisMaps_medium_full, habitat_boxes_eunis
 
-> eunisMaps_fine_200, eunisMaps_fine_50, eunisMaps_fine_full 
+> eunisMaps_fine_200, eunisMaps_fine_50, eunisMaps_fine_full, habitat_boxes_eunis 
 
-> eunisMaps_broad_200, eunisMaps_broad_50, eunisMaps_broad_full 
+> eunisMaps_broad_200, eunisMaps_broad_50, eunisMaps_broad_full, habitat_boxes_eunis 
 
 **Values:** See Id codes from the official [EEA EUNIS habitats vocabulary](http://dd.eionet.europa.eu/vocabulary/biodiversity/eunishabitats/view).
 
@@ -109,22 +109,24 @@ Filter habitat maps from survey to only show specified datasets.
 
 _EUNIS habitat maps from survey_
 
-> eunisMaps_medium_200, eunisMaps_medium_50, eunisMaps_medium_full 
+> eunisMaps_medium_200, eunisMaps_medium_50, eunisMaps_medium_full, habitat_boxes_eunis 
 
-> eunisMaps_fine_200, eunisMaps_fine_50, eunisMaps_fine_full 
+> eunisMaps_fine_200, eunisMaps_fine_50, eunisMaps_fine_full, habitat_boxes_eunis 
 
-> eunisMaps_broad_200, eunisMaps_broad_50, eunisMaps_broad_full 
+> eunisMaps_broad_200, eunisMaps_broad_50, eunisMaps_broad_full, habitat_boxes_eunis 
 
 
 _Other habitat maps from survey_
 
-> otherMaps_medium_200, otherMaps_medium_50, otherMaps_medium_full 
+> otherMaps_medium_200, otherMaps_medium_50, otherMaps_medium_full, habitat_boxes_other
 
-> otherMaps_fine_200, otherMaps_fine_50, otherMaps_fine_full 
+> otherMaps_fine_200, otherMaps_fine_50, otherMaps_fine_full, habitat_boxes_other
+
+> otherMaps_broad_200, otherMaps_broad_50, otherMaps_broad_full, habitat_boxes_other
 
 _Habitats directive habitat maps from survey_
 
-> N2000_100, N2000_Full, N2000_SA, N2000_SAx
+> annexiMaps_full, annexiMaps_50, annexiMaps_200, habitat_boxes_n2000
 
 
 **Values:** “GUI” dataset identifiers, these can be identified by querying a habitat map in the [interactive map](https://emodnet.ec.europa.eu/geoviewer/), or through the [metadata search page](http://gis.ices.dk/geonetwork/srv/eng/catalog.search#/search).
