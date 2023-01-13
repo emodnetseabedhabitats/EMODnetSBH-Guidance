@@ -94,7 +94,6 @@ _OSPAR reference dataset_
 **Notes on usage:**
 *	The code is passed through as a regex expression, as such, you may shorten the codes further.
 *	Separating habitats with a pipe character “|” will allow act as an OR statement. See example below.
-*	Filtering on the layer “OSPARhabPolygonLoc” will show ICES squares containing the selected habitat.
 
 **Examples:**
 *	&OSPCode =zosterab
