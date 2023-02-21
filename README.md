@@ -7,12 +7,12 @@ EMODnet Seabed Habitats provides an [OGC Web Mapping Service](http://www.opengeo
 Due to the large volume of individual habitat survey maps and models, we have separate the OGC services into separate workspaces. 
 
 The WMS for the main EMODnet Seabed Habitats' data products is: 
-https://ows.emodnet-seabedhabitats.eu/geoserver/emodnet_view/wms? 
+https://ows.emodnet-seabedhabitats.eu/geoserver/emodnet_view/wms 
 
 This includes our main products including, but not limited to, EUSeaMap 2021, the OSPAR Threatened and Declining Habitats database, survey groundtruthing point data and our Essential Ocean Vairable composite products. 
 
 The WMS for all individual habitat maps and models is:
-https://ows.emodnet-seabedhabitats.eu/geoserver/emodnet_view_maplibrary/wms?
+https://ows.emodnet-seabedhabitats.eu/geoserver/emodnet_view_maplibrary/wms
 
 ## Loading WMS data in GIS clients 
 
@@ -31,14 +31,10 @@ The template for adding a parameter to a WMS request is in the form of **&*[Para
 
 Adding custom vendor paramters to WMS requests depends on the client/software being used, please refer to the documentation of your specifc software.
 
-### &HabCode=*[value]*
+### &Hab_type=*[value]*
 Filter layer to show only records containing the described EUNIS Habitat code(s), even as a habitat mosaic.
 
 **Affects the following WMS layers:**
-
-_EUSeaMap2021_
-
-> eusm2021_eunis2019_200, eusm2021_eunis2019_400, eusm2021_eunis2019_800, eusm2021_eunis2019_full 
 
 _EUNIS habitat maps from survey_
 
@@ -53,15 +49,14 @@ _EUNIS habitat maps from survey_
 **Notes on usage:**
 * The code is passed through as a regex expression, as suchfilter selections will include all habitats described at a finer detail (i.e. child habitats).
 * Separating habitats with a pipe character “|” will allow act as an OR statement. See example below.
-*	Filtering on the “EUNIS[ ]_SA” or “EUNIS[ ]_SAx” layers will show bounding boxes only for EUNIS maps containing the selected habitats.
 
 **Examples:**
-*	&HabCode=A5.2
+*	&Hab_type=A5.2
     *	This will show only polygons containing the habitat A5.2, including those described to a finer level (e.g. A5.23, A5.253)
-*	&HabCode=A3.1|A3.2
+*	&Hab_type=A3.1|A3.2
     *	This will show only polygons containing EITHER A3.1 OR A3.2
 
-### &OSPCode=*[value]*
+### &habtype=*[value]*
 Filter layer to show only records describing the OSPAR Habitat, written as a shortened code.
 
 **Affects the following WMS layers:** 
@@ -72,36 +67,35 @@ _OSPAR reference dataset_
 
 **Values:**
 
-| Code | OSPAR Habitat |
-| ---- | ------------- |
-| carbmoun | Carbonate mounds |
-| coragard | Coral gardens |
-| cymomead | Cymodocea meadows |
-| deepspag | Deep-sea sponge aggregations |
-| ocearidg | Oceanic ridges with hydrothermal vents/fields |
-| lophpert | Lophelia pertusa reefs |
-| ostredul | Ostrea edulis beds |
-| seamount | Seamounts |
-| seapenbm | Sea-pen and burrowing megafauna communities |
-| zosterab | Zostera beds |
-| intermud | Intertidal mudflats |
-| litchalk | Littoral chalk communities |
-| maerlbed | Maerl beds |
-| modimodi | Modiolus modiolus horse mussel beds |
-| sabspinu | Sabellaria spinulosa reefs |
-| intermyt | Intertidal Mytilus edulis beds on mixed and sandy sediments |
+| OSPAR Habitat |
+| --- |
+| Carbonate mounds |
+| Coral gardens |
+| Cymodocea meadows |
+| Deep-sea sponge aggregations |
+| Oceanic ridges with hydrothermal vents/fields |
+| Intertidal mudflats |
+| Intertidal Mytilus edulis beds on mixed and sandy sediments |
+| Littoral chalk communities |
+| Lophelia pertusa reefs |
+| Maerl beds |
+| Modiolus modiolus horse mussel beds |
+| Ostrea edulis beds |
+| Seamounts |
+| Sea-pen and burrowing megafauna communities |
+| Sabellaria spinulosa reefs |
+| Zostera beds |
 
 **Notes on usage:**
-*	The code is passed through as a regex expression, as such, you may shorten the codes further.
 *	Separating habitats with a pipe character “|” will allow act as an OR statement. See example below.
 
 **Examples:**
-*	&OSPCode =zosterab
-    *	This will filter the layer to show records of Zostera beds
-*	&OSPCode =deepspag|coragard
-    *	This will filter the layer to show records of Deep-sea sponge aggregations and Coral gardens
+*	&habtype=Coral gardens
+    *	This will filter the layer to show records of Coral gardens
+*	&habtype=Coral gardens|Cymodocea meadows
+    *	This will filter the layer to show records of Coral gardens and Cymodocea meadows
 
-### &GUICode=*[value]*
+### &gui=*[value]*
 Filter habitat maps from survey to only show specified datasets.
 
 **Affects the following WMS layers:** 
@@ -135,11 +129,11 @@ _Habitats directive habitat maps from survey_
 *	Separating habitats with a pipe character “|” will allow act as an OR statement. See example below.
 
 **Examples:**
-*	&GUICode=GB000217
+*	&gui=GB000217
     *	This will show only the map [“Phase I intertidal survey for Wales”](http://gis.ices.dk/geonetwork/srv/eng/catalog.search#/metadata/3d7055e6-2c8b-4efc-99f8-e4038965bcda) (Note, as this map is a EUNIS map – nothing will be shown when viewing either Habitats Directive or “Other” habitat maps from survey).
-*	&GUICode=IT
+*	&gui=IT
     *	This will show only maps submitted by Italian organisations
-*	&GUICode=ES|GR
+*	&gui=ES|GR
     *	This will show only maps submitted by either Spanish or Greek organisations
 
 # EMODnet Seabed Habitats Web Feature Services (WFS)
@@ -157,7 +151,7 @@ https://ows.emodnet-seabedhabitats.eu/geoserver/emodnet_view_maplibrary/wfs?
 
 Please note, that this workspace is habitat maps in vector format only. 
 
-It should be noted that WFS is not the most efficient form of delivery for complex datasets, (e.g. EUSeaMap 2021), due to the size of the downloads involved. These datasets are also available to download as static download packages from the [EMODnet downloads page](https://emodnet.ec.europa.eu/geonetwork/emodnet/eng/catalog.search#/home).
+It should be noted that WFS is not the most efficient form of delivery for complex datasets, (e.g. EUSeaMap 2021), due to the size of the downloads involved. These datasets are also available to download as static download packages accessible from the layer information on the EMODnet central viewer [EMODnet viewer](https://emodnet.ec.europa.eu/geoviewer/) or the dataset metadata records.
 
 **Notes on usage:**
 * Note that depending on a layer's complexity, it may take some time to load into your GIS or may time out. In the event of consistent time-outs, please download the corresponding static package.
